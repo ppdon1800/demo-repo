@@ -4,6 +4,7 @@ import ImgSlider from './components/ImgSlider.jsx'
 import LoadMore from './components/loadmore/LoadMore.jsx'
 import Qrcode from './components/Qrcode.jsx'
 import RandomColor from './components/RandomColor.jsx'
+import ScrollIndicator from './components/scrollIndicator.jsx'
 import Star from './components/Star.jsx'
 
 
@@ -18,8 +19,9 @@ function App() {
       {
         // <ImgSlider/>
       }
-      {/* <LoadMore/> */}
-      <Qrcode/>
+      <LoadMore/>
+      {/* <Qrcode/> */}
+      <ScrollIndicator/>
     </div>
   )
 }
