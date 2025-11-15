@@ -6,6 +6,7 @@ import Qrcode from './components/Qrcode.jsx'
 import RandomColor from './components/RandomColor.jsx'
 import ScrollIndicator from './components/scrollIndicator.jsx'
 import Star from './components/Star.jsx'
+import TabManager from './components/tabs/TabManager.jsx'
 
 
 function App() {
@@ -19,9 +20,11 @@ function App() {
       {
         // <ImgSlider/>
       }
-      <LoadMore/>
+      {/* <LoadMore/> */}
       {/* <Qrcode/> */}
-      <ScrollIndicator/>
+      {/* <ScrollIndicator/> */}
+
+      <TabManager tabs={[{name:'ImageSlider',component:<ImgSlider/>},{name:'Accordion',component:<Accordion/>},{name:'RandomColor',component:<RandomColor/>}]} />
     </div>
   )
 }
