@@ -2,6 +2,7 @@
 import Accordion from './components/Accordion.jsx'
 import ImgSlider from './components/ImgSlider.jsx'
 import LoadMore from './components/loadmore/LoadMore.jsx'
+import PopupTest from './components/popupmodal/popupTest.jsx'
 import Qrcode from './components/Qrcode.jsx'
 import RandomColor from './components/RandomColor.jsx'
 import ScrollIndicator from './components/scrollIndicator.jsx'
@@ -25,6 +26,8 @@ function App() {
       {/* <ScrollIndicator/> */}
 
       <TabManager tabs={[{name:'ImageSlider',component:<ImgSlider/>},{name:'Accordion',component:<Accordion/>},{name:'RandomColor',component:<RandomColor/>}]} />
+
+      <PopupTest/>
     </div>
   )
 }
